@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMES</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="box-list">
+        <div class="top">
+            <a href="login.html">Logout</a>
+            <a href="register.html">Create new account!</a>
+        </div>
+        <h1 class="title">My List</h1>
+    <form action="server.py" method="get">    
+        <nav>
+            <div class="sort">
+                <div id="btn">
+                    <button type="button">Add New Anime &#9827</button>
+                    <button type="button">High Score &#8593</button>
+                    <button type="button">Low Score &#8595</button>
+                </div>
+                <div>
+                    <input type="search" placeholder="Search..." name="animesearch" id="anime-search"><button type="submit" class="ok">Ok</button>
+                </div>
+            </div>
+        </nav>
+    </form>
+    
+    <section id="anime-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Anime Name</th>
+                    <th>Rate / last Ep</th>
+                    <th>Description</th>
+                    <th>Finished</th>
+                    <th>Edit</th>
+                    <th>Del</th>  
+                </tr>
+            </thead>
+            <tbody id="anime-body">
+                <tr>
+                    <td><input type="text" class="name_anime" readonly></td>
+                    <td>
+                        <input type="text" class="input_size" readonly >
+                        <input type="text" class="input_size" readonly>
+                    </td>
+                    <td><input type="text" class="description" readonly></td>
+                    <td class="accept-ok"><input type="checkbox" name="accept_ok" id="accept-ok"> </td>
+                    <td><button class="edit">✏️ </button></td>
+                    <td><button class="del"> 🗑️</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </div>
+
+    <footer>
+        © 2025 [ANIME LIST]. All rights reserved.
+        All content on this website, including texts, images, logos, graphics and other materials, is protected by copyright and intellectual property laws. Any unauthorized reproduction, distribution, modification or use of the content, in whole or in part, without prior written authorization is strictly prohibited.
+        For content use or license requests, please contact <a href="mailto:anilist.manager@gmail.com">(anilist.manager@gmail.com)</a>.
+    </footer>
+
+</body>
+
+</html>
